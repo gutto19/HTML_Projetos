@@ -1,0 +1,175 @@
+
+/*CSS da pag. Cadastro */
+body,
+
+html{
+    margin:0 auto;
+    padding: 0;
+	font-size:18px;
+}
+
+body{
+    background:#ccc url(https://timeline.canaltech.com.br/88642.700/como-funciona-o-sistema-binario.jpg) center top no-repeat;
+	background-size:100%;
+    background-attachment:fixed;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    font-family: "Times New Roman",sans-serif;
+    font-size: 16px;
+    background-color: white;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px 10px 10px 40px;
+}
+
+a, a img{
+	text-decoration:none;
+	border:none;
+}
+
+img{
+	max-width:100%;
+	height:auto;
+}
+
+.principal{
+	width: 960px;
+	color: #fff;
+	margin: 0 auto;
+    font-family:"Times New Roman",sans-serif;
+    text-align:justify;
+}
+
+.cabecalho{
+	height:100px;
+}
+
+.logo-cabecalho{
+	float:left;
+}
+
+.logo-cabecalho a{
+	font-size:50px;
+    font-style:normal;
+    font-family:"Times new roman", sans-serif;
+    text-decoration:none;
+    text-align:justify; 
+	color:#fff;
+	display:block;
+	padding: 20px 0 0 0;
+}
+
+.menu{
+	background:#F00;
+}
+
+.menu ul li, 
+
+.menu ul{
+	margin:0;
+	padding:0;
+    list-style:none;
+    font-family:"Times new roman", sans-serif;
+    text-align:justify;
+}
+
+.menu ul li{
+    display:inline-block;
+    font-family:"Times new roman", sans-serif;
+    text-align:justify;
+}
+
+.menu ul li a{
+	display:block;
+	color:#fff;
+    padding:13px 20px;
+    font-family:"Times new roman", sans-serif;
+    text-align:justify;
+}
+
+.submit input {
+    background-color: #fff;
+    height: 40px;
+    width: 150px;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+    color: black;
+    cursor: pointer;
+}
+
+.submit input:hover{
+    background: #078;
+}
+ 
+.reset input {
+    background-color: #fff;
+    height: 40px;
+    width: 150px;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+    color: black;
+    cursor: pointer;
+}
+
+.reset input:hover{
+    background: #078;
+}
+
+form label {
+    margin: 0 auto;
+    color: #000;
+    font-weight: bold;
+    padding: 5px;
+    border: 1px solid red;
+    border-radius: 1em;
+    display: inline-block;
+}
+
+.nome input {
+    height: 15px;
+    width: 200px;
+}
+
+.usuario input {
+    height: 15px;
+    width: 200px;
+}
+
+.cpf input {
+    height: 15px;
+    width: 200px;
+}
+
+.telefone input {
+    height: 15px;
+    width: 200px;
+}
+
+.email input {
+    height: 15px;
+    width: 200px;
+}
+
+.cidade input {
+    height: 15px;
+    width: 200px;
+}
+
+.data input {
+    height: 15px;
+    width: 200px;
+}
+
+.senha input {
+    height: 15px;
+    width: 200px;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+        <meta charset="UTF-8">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" type="text/css" href="Cadastro.css">
+
+		<title>Expressões Regulares</title>
+    </head>
+    
+    <body>
+        <div class="principal">
+            <div class="cabecalho">
+                <div class="logo-cabecalho">
+                    <a href="./" style="border-style:groove; margin:auto;">Expressões Regulares</a>
+                </div>
+            </div>
+            
+            <div class="menu">
+                <ul>
+                    <li> <a href="Principal.html">Início</a> </li>
+                    <li> <a href="Cadastro.html">Cadastro</a> </li>
+                    <li> <a href="Dados.html">Dados</a> </li>
+                </ul>
+            </div>
+
+            <form name="formulario" id="formulario" action="Dados.php" method="POST">
+                <div id="cadastro">
+                    <p class="nome">
+                        <input type="text" required autofocus pattern="^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ] + $" 
+                        placeholder="Gustavo Cardoso"  onkeyup="checkNumero(event);" id="nomePessoa" name="nome"/>
+                        <label for="nome">
+                            Nome
+                        </label>            
+                    </p>
+
+                    <p class="usuario">
+                        <input type="text" required autofocus pattern="^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ-[0-9]] + $" 
+                        placeholder="Gutto" id="usuarioid" name="usuario"/>
+                        <label for="nome">
+                            Usuário
+                        </label>            
+                    </p>
+
+                    <p class="cpf">
+                        <input type="text" required pattern="^(\d{3}\.\d{3}\.\d{3}-\d{2})|(\d{11})$" id="cpfid"
+                        placeholder="888.888.888-88" title="Digite o cpf corretamente" name="cpf"/>
+                        <label for="cpf">
+                            CPF
+                        </label>  
+                    </p>
+
+                    <p class="telefone">
+                        <input type="tel" required pattern="^([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}" id="telefoneid"
+                        placeholder="(88) 88888-8888" title="Numero não confere com o padrão." name="telefone" />
+                        <label for="telefone">
+                            Telefone
+                        </label>   
+                    </p>
+
+                    <p class="email">
+                        <input type="email" required="required" class="input-text" id="emailid" 
+                        placeholder="fulano@mail.com" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+                        <label for="email">
+                            E-mail
+                        </label>   
+                    </p>
+
+                    <p class="cidade">
+                        <input type="text" required autofocus pattern="^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" id="cidadeid"
+                        title="Digite a cidade que mora" placeholder="Salvador" name="cidade"/>
+                        <label for="cidade">
+                            Cidade
+                        </label>
+                    </p>
+                    
+                    <p class="data">
+                        <input type="date" required min="1938-01-01" max="2019-06-08" id="dataid" name="data" />
+                        <label for="data">
+                            Data de Nascimento
+                        </label>   
+                    </p>
+
+                    <p class="senha">
+                        <input type="password" id ="senhaid" required title="A senha deve conter ao menos 1 letra minúscula, 1 letra maiúscula, 1 número ou caractere especial e ter um mínimo de 8 caracteres" 
+                        pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" placeholder="********" name="senha" />
+                        <label for="senha">
+                            Senha
+                        </label>        
+                    </p>
+
+                    <p class="submit">
+                        <input type="submit" onclick="Enviar();" value="Cadastrar" name="enviar"/>
+                    </p>
+
+                    <p class="reset">
+                        <input type="reset" onclick="Limpar();" value="Limpar" name="reset"/>
+                    </p>
+                </div>
+            </form>
+            <script>
+                var value = '';
+                
+                function Enviar() { //inicio da funcao
+                    
+                    //pega o formulário como elemento
+                    var formulario = document.getElementById('formulario');
+
+                    //monta os parametros de get
+                    var parsGet = '?acao=cadastrar';
+                    parsGet = parsGet + '&nomePessoa =' + document.getElementById('nomePessoa').value;
+
+                    //muda o parâmetro action do formulário com os parmetros get
+                    formulario.action = formulario.action + parsGet;
+
+                    //envia o formulário
+                    formulario.submit();
+
+                    /*if (nome.value != "") {
+                        alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
+                    }*/
+                }
+                
+                function checkNumero(e) {
+                    if(!isNaN(parseInt(e.key))) {
+                        alert("Digitos não podem ser digitados");
+                    } else {
+                        value = document.getElementById("nomePessoa").value;
+                    }
+                    document.getElementById("nomePessoa").value = value;
+                }
+                
+            </script>
+        </div>
+    </body>

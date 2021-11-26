@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="Dados.css">
+
+        <title>Expressões Regulares</title>   
+    </head>
+    <body>
+        <div class="principal">
+            <div class="cabecalho">
+                <div class="logo-cabecalho">
+                    <a href="./" style="border-style:groove; margin:auto;">Expressões Regulares</a>
+                </div>
+            </div>
+        
+            <div class="menu">
+                <ul>
+                    <li> <a href="Principal.html">Início</a> </li>
+                    <li> <a href="Cadastro.html">Cadastro</a> </li>
+                    <li> <a href="Dados.html">Dados</a> </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 
+            <?php
+            if (isset ( $_POST ['enviar'])) {
+            echo "Dados enviado: </p> <pre>";
+            print_r($_POST); echo "</pre>";
+            }?> 
+        -->
+        <div class="content">
+            <div id="login">
+                <form method="post" action="Login.php"> 
+                    <h1>Login</h1> 
+                    <p> 
+                    <label for="nome">Usuário</label>
+                    <input id="usuarioid" name="usuario" required="required" type="text" placeholder="Gutto20"/>
+                    </p>
+                    
+                    <p> 
+                    <label for="senha">Senha</label>
+                    <input id="senhaid" name="senha" required="required" type="password" placeholder="********" /> 
+                    </p>
+                    
+                    <p> 
+                    <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+                    <label for="manterlogado">Manter-me logado</label>
+                    </p>
+                    
+                    <p> 
+                    <input type="submit" value="Logar" /> 
+                    </p>
+                    
+                    <p class="link">
+                    Ainda não tem conta?
+                    <a href="Cadastro.html">Cadastre-se</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+        <meta charset="UTF-8">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" type="text/css" href="Principal.css">
+
+		<title>Expressões Regulares</title>
+	</head>
+	
+	<body>
+        <div class="principal">
+            <div class="cabecalho">
+                <div class="logo-cabecalho">
+                    <a href="./" style="border-style:groove; margin:auto;">Expressões Regulares</a>
+                </div>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li> <a href="Principal.html">Início</a> </li>
+                    <li> <a href="Cadastro.html">Cadastro</a> </li>
+                    <li> <a href="Dados.html">Dados</a> </li>
+                </ul>
+            </div>
+
+            <div class="corpo">
+                <div class="artigos">
+                    <div class="espacamento">
+                        <p>
+                            <strong>Funções presentes nas Expressões Regulares</strong>
+                            <ol>
+                                <strong><br>Funções Java</br></strong>
+                                    <ol>
+                                        <li><p style="border-style:groove; margin:auto;">
+                                        <strong>java.util.regex.Pattern:</strong> <br>A classe Pattern é responsável pela representação do padrão a ser compilado e utilizado nas pesquisas. 
+                                        Para a sua utilização, deve-se obter uma referência de Pattern por meio do método estático compile (String padrao).</br>
+                                        <strong><br>Ex: Pattern pattern = Pattern.compile(“teste”);</br></strong>
+                                        </p></li>
+                                    
+                                        <li><p style="border-style:groove; margin:auto;">    
+                                        <strong>java.util.regex.Matcher:</strong> <br>A classe Matcher é responsável pelas operações de pesquisa e análise de cadeias de caracteres de entrada, possibilitando a execução de buscas, retorno de resultados, extração de índices de informações e dados agrupados. 
+                                        Para a sua utilização, deve-se obter uma referência de Matcher por meio do método matcher(String texto) de uma referência de Pattern.</br>
+                                        <strong><br>Ex: Matcher matcher = pattern.matcher(“Executando um teste de RegEx…”);</br></strong>
+                                        </p></li>
+                                    
+                                        <li><p style="border-style:groove; margin:auto;">
+                                        <strong>java.util.regex.PatternSyntaxException:</strong> <br>A classe PatternSyntaxException permite o controle e tratamento de exceções lançadas durante o uso de expressões regulares.
+                                        Através da verificação desse tipo de exceção, é possível ter um controle maior sobre os erros gerados a partir de consultas quando a sintaxe do padrão informada à aplicação é inválida.</br> 
+                                        </p></li>
+                                    </ol>
+                                <strong><br>Funções PHP (POSIX)</br></strong>
+                                <ol>
+                                    <li><p style="border-style:groove; margin:auto;">
+                                        <strong>ereg_replace:</strong> Substituição com expressões regulares.
+                                    </p></li>
+                                    <li><p style="border-style:groove; margin:auto;">
+                                        <strong>ereg:</strong> Casando expressões regulares.
+                                    </p></li>
+                                    <li><p style="border-style:groove; margin:auto;">
+                                        <strong>eregi_replace:</strong> Substitução com expressões regulares insensíveis a maiúsculas e minúsculas.
+                                    </p></li>
+                                    <li><p style="border-style:groove; margin:auto;">
+                                        <strong>eregi:</strong> Aplica expressões regulares insensíveis a maiúsculas e minúsculas.
+                                    </p></li>
+                                    <li><p style="border-style:groove; margin:auto;">
+                                        <strong>split:</strong> Separa strings em array utilizando expressões regulares.
+                                    </p></li>
+                                    <li><p style="border-style:groove; margin:auto;">
+                                        <strong>spliti:</strong> Separa strings em array utilizando expressões regulares insensíveis a maiúsculas e minúsculas.
+                                    </p></li>
+                                    <li><p style="border-style:groove; margin:auto;">
+                                        <strong>sql_regcase:</strong> Cria expressões regulares insensíveis a maiúsculas e minúsculas.
+                                    </p></li>
+                                </ol>
+                                <strong><br>Funções PHP (PCRE)</br></strong>
+                                <ol>
+                                    <li><p style="border-style:groove; margin:auto;">
+                                        <strong>preg_filter:</strong> Executar uma pesquisa de expressão regular e substituir.
+                                    </p></li>
+                                    <li><p style="border-style:groove; margin:auto;">
+                                        <strong>preg_grep:</strong> Retorna as entradas do array que combinaram com o padrão.
+                                    </p></li>
+                                    <li><p style="border-style:groove; margin:auto;">
+                                        <strong>preg_last_error:</strong> Retorna o código de erro da última regex PCRE executada.
+                                    </p></li>
+                                    <li><p style="border-style:groove; margin:auto;">
+                                        <strong>preg_match_all:</strong> Executar uma correspondência de expressão regular global.
+                                    </p></li>
+                                    <li><p style="border-style:groove; margin:auto;">
+                                        <strong>preg_match:</strong> Executar uma correspondência de expressão regular.
+                                    </p></li>
+                                    <li><p style="border-style:groove; margin:auto;">
+                                        <strong>preg_quote:</strong> Adiciona escape em caracteres da expressão regular.
+                                    </p></li>
+                                    <li><p style="border-style:groove; margin:auto;">
+                                        <strong>preg_replace_callback_array:</strong> Executar uma pesquisa de expressão regular e substituir usando retornos de chamada.
+                                    </p></li>
+                                    <li><p style="border-style:groove; margin:auto;">
+                                        <strong>preg_replace_callback:</strong> Executa uma busca usando expressão regular e modifica usando um callback.
+                                    </p></li>
+                                    <li><p style="border-style:groove; margin:auto;">
+                                        <strong>preg_replace:</strong> Realiza uma pesquisa por uma expressão regular e a substitui.
+                                    </p></li>
+                                    <li><p style="border-style:groove; margin:auto;">
+                                        <strong>preg_split:</strong> Divide a string por uma expressão regular.
+                                    </p></li>   
+                                </ol>
+                            </ol>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="barra-lateral">
+                    <div class="espacamento" >
+                        <p>
+                            <strong>O que é Expressão Regular?</strong><br>
+                            </br>
+                            Expressão Regular é uma linguagem de busca de padrões, onde dizemos que o padrão (pattern) do texto que queremos encontrar, passamos o texto alvo (target) e pedimos para uma Regex engine (motor) fazer essa busca.
+                        </p>
+                    </div>  
+                </div>
+            </div>
+        </div>
+	</body>
+</html>

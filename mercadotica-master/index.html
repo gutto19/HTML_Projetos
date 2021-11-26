@@ -1,0 +1,119 @@
+<title>Lentes</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <header>
+    </header>
+
+    <form name="from">
+        <div class="form-group">
+            <h2>1- Quantas horas por dia você passa na frente de telas? (computador, tevelisão, tablets, celular)</h2>
+            <div class="form-group-inside">
+                <input type="radio" name="q1" value="1"> Até 2 horas.
+            </div>
+
+            <div class="form-group-inside">
+                <input type="radio" name="q1" value="2"> Entre 2 e 4 horas.
+            </div>
+
+            <div class="form-group-inside">
+                <input type="radio" name="q1" value="4"> Entre 4 e 6 horas.
+            </div>
+
+            <div class="form-group-inside">
+                <input type="radio" name="q1" value="8"> Mais de 6 horas.
+            </div>
+        </div>
+        <div class="form-group">
+            <h2>2 – Entre idas e vindas de ambientes externos(com sol) para ambientes internos (sem sol) e vice-versa, quantas vezes, em média, você faz essa troca diariamente?</h2>
+            <div class="form-group-inside">
+                <input type="radio" name="q2" value="16"> Até 2 vezes.
+            </div>
+
+            <div class="form-group-inside">
+                <input type="radio" name="q2" value="32"> Entre 2 e 5 vezes.
+            </div>
+
+            <div class="form-group-inside">
+                <input type="radio" name="q2" value="64"> Mais de 5 vezes.
+            </div>
+        </div>
+        <div class="form-group">
+            <h2>3 – Quantas horas por dia você costuma usar os óculos?</h2>
+
+            <div class="form-group-inside">
+                <input type="radio" name="q3" value="128"> Até 2 horas.
+            </div>
+
+            <div class="form-group-inside">
+                <input type="radio" name="q3" value="256"> Entre 2 e 5 horas.
+            </div>
+
+            <div class="form-group-inside">
+                <input type="radio" name="q3" value="512"> Mais de 5 horas.
+            </div>
+        </div>
+        <hr class="my-4" />
+        <button type="button" class="enviar" onclick="Enviar();">Enviar</button>
+    </form>
+
+    <section class="hero">
+    </section>
+
+    <script type="text/javascript">
+        function Enviar(){
+            var q1 = document.getElementsByName('q1');
+            var q2 = document.getElementsByName('q2');
+            var q3 = document.getElementsByName('q3');
+
+            var checkedQ1= false;
+            var checkedQ2= false;
+            var checkedQ3= false;
+
+            var respostaQ1;
+            var respostaQ2;
+            var respostaQ3;
+            for(var i in q1) {
+                if(q1[i].checked) {
+                    respostaQ1 = parseInt(q1[i].value);
+                    checkedQ1 = true;
+                    break;
+                }
+            }
+
+            for(var i in q2) {
+                if(q2[i].checked) {
+                    respostaQ2 = parseInt(q2[i].value);
+                    checkedQ2 = true;
+                    break;
+                }
+            }
+
+            for(var i in q3) {
+                if(q2[i].checked) {
+                    respostaQ3 = parseInt(q3[i].value);
+                    checkedQ3 = true;
+                    break;
+                }
+            }
+
+            if(checkedQ1 === false || checkedQ2 === false || checkedQ3 === false) {
+                alert("É necessário responder todas as questões");
+            } else {
+                result = respostaQ1 + respostaQ2 + respostaQ3;
+                if (result <= 255){
+                    window.location.href = "r1.html";
+                }
+                else if (result >= 256 && result <= 511){
+                    window.location.href = "r2.html";
+                }
+                else {
+                    window.location.href = "r3.html";
+                }
+            }
+        }
+    </script>
+</body>

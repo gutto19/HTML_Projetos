@@ -1,0 +1,142 @@
+/* Meu CSS */
+body,
+
+html{
+	margin:  0; 
+	padding: 0;
+	font-size:18px;
+}
+
+body{
+	background:#ccc url(https://timeline.canaltech.com.br/88642.700/como-funciona-o-sistema-binario.jpg) center top no-repeat;
+	background-size:100%;
+    background-attachment:fixed;
+    margin: 0;
+    padding: 0;
+}
+
+a, a img{
+	text-decoration:none;
+	border:none;
+}
+
+img{
+	max-width:100%;
+	height:auto;
+}
+
+.principal{
+	width: 960px;
+	color: #fff;
+	margin: 0 auto;
+    font-family:"Times New Roman",sans-serif;
+    text-align:justify;
+}
+
+.cabecalho{
+	height:100px;
+}
+
+.logo-cabecalho{
+	float:left;
+}
+
+.logo-cabecalho a{
+	font-size:50px;
+    font-style:normal;
+    font-family:"Times new roman", sans-serif;
+    text-decoration:none;
+    text-align:justify; 
+	color:rgb(247, 247, 247);
+	display:block;
+	padding:20px 0 0 0;
+}
+
+.menu{
+	background:#F00;
+}
+
+.menu ul li, 
+
+.menu ul{
+	margin:0;
+	padding:0;
+    list-style:none;
+    font-family:"Times new roman", sans-serif;
+    text-align:justify;
+}
+
+.menu ul li{
+    display:inline-block;
+    font-family:"Times new roman", sans-serif;
+    text-align:justify;
+}
+
+.menu ul li a{
+	display:block;
+	color:#fff;
+    padding:13px 20px;
+    font-family:"Times new roman", sans-serif;
+    text-align:justify;
+}
+
+.corpo{
+	position:relative;
+    overflow:hidden;
+    font-family:"Times new roman", sans-serif;
+    text-align:justify;
+}
+
+.artigos{
+    float:left;
+    font-family:"Times new roman", sans-serif;
+    text-align:justify;
+    color: #000;
+}
+
+.artigos, .artigos:before{
+    width:70%;
+    font-family:"Times new roman", sans-serif;
+    text-align:justify;
+}
+
+.artigos:before{
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+    background:#fff;
+	z-index:-1;
+    content:'';
+    font-family:"Times new roman", sans-serif;
+    text-align:justify;
+}
+
+.barra-lateral{
+    float:right;
+    font-family:"Times new roman", sans-serif;
+    text-align:justify;
+    color: #000;
+}
+
+.barra-lateral, .barra-lateral:before{
+	width:30%;
+}
+
+.barra-lateral:before{
+   content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+	right:0;
+    z-index: -1;
+    background: #fff;
+    font-family:"Times new roman", sans-serif;
+    text-align:justify;
+}
+
+.espacamento{
+    padding:20px;
+    font-family:"Times new roman", sans-serif;
+    text-align:justify;
+}

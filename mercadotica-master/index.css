@@ -1,0 +1,107 @@
+/* Meu CSS */
+
+{margin: 0; padding: 0; font-size: 100%; box-sizing: border-box; font-family: 'Open Sans', sans-serif;}
+ul{ list-style: none;}
+a { text-decoration: none; cursor: pointer; opacity: 0.9;}
+a:hover {opacity: 1;}
+a, a img{
+text-decoration:none;
+border:none;
+}
+
+header{
+top: 0;
+left: 0;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: column;
+}
+
+nav{
+display: block;
+}
+
+header ul{
+display: flex;
+margin-right: 120px;
+align-items: center;
+justify-content: center;
+}
+
+.hero {
+background-image: url('../imagens/oculos5.jpeg');
+background-size: cover;
+min-height: 100vh;
+display: flex;
+color: #fff;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+ul{
+list-style: none;
+}
+
+ul{
+display: block;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+padding-inline-start: 40px;
+padding: 15px;
+}
+
+li{
+display: list-item;
+margin: 10px;
+border: 2px solid;
+background: yellow;
+text-decoration: none ;
+}
+
+form {
+padding: 20px 25px;
+width: 100%;
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+top: 180px;
+}
+
+form .form-group {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin: 10px 0px;
+}
+
+button[type='button'] {
+padding: 10px;
+min-width: 50%;
+color: white;
+background: #0b76d0;
+border-radius: 250px;
+border: none;
+cursor: pointer;
+height: 42px;
+}
+
+button[type='button']:hover {
+background: #0e65b3;
+font-size: 20px;
+height: 50px;
+transition: background 0.5s, font-size 0.5s, height 0.5s;
+}
+
+.my-4 {
+margin: 10px 0px;
+border-top: 1px solid #ccc;
+}
