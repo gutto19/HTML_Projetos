@@ -3,14 +3,14 @@ Projetos criados para vaga de estágio e atividades curriculares.
 
 HTML
 ## Sobre este repositório
-Conjunto de atividades realizadas com a liguagem de programação Java. Abaixo existe um quadro no qual você pode visualizar alguns dessas atividades. Para acessar, basta clicar sobre o Título do aplicaivo que deseja.
+Atividade realizada para uma sobre expressões regulares, na qual foi utilizado o HTML para a criação do site, o JavaScript para o cadastro e o PHP para a comunicação com um servidor que criei na época. Com isso, realizei a demonstração de algumas expressões regulares no código.
 
 ### Autor
 
 * Gustavo Cardoso Ribeiro
  
-# Lista de Atividades Realizadas
+# Expressões Regulares
 
- | [**Áreas de Formas Diferentes**](https://github.com/gutto19/Estudos-Java/tree/main/imagens/)      | [**Cáculo de Imposto**](https://github.com/gutto19/Estudos-Java/tree/main/imagens)     | [**Transformação de Temperatura**](https://github.com/gutto19/Estudos-Java/tree/main/imagens)      |
+ | [**Início**](https://github.com/gutto19/Estudos-Java/tree/main/imagens/)      | [**Cadastro**](https://github.com/gutto19/Estudos-Java/tree/main/imagens)     | [**Login**](https://github.com/gutto19/Estudos-Java/tree/main/imagens)      |
 |------------|-------------| -------------|
 |  <img src="https://github.com/gutto19/Estudos-Java/blob/main/imagens/AreasDeFormas.png" width="300"> |  <img src="https://github.com/gutto19/Estudos-Java/blob/main/imagens/Imposto.png" width="250"> |    <img src="https://github.com/gutto19/Estudos-Java/blob/main/imagens/TemperaturaCemF.png" widht="250"> |  
