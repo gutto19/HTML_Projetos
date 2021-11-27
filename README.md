@@ -13,4 +13,4 @@ Atividade realizada para uma sobre expressões regulares, na qual foi utilizado 
 
  | [**Início**](https://github.com/gutto19/HTML_Projetos/tree/main/mercadotica-master/imagens)      | [**Cadastro**](https://github.com/gutto19/HTML_Projetos/tree/main/mercadotica-master/imagens)     | [**Login**](https://github.com/gutto19/HTML_Projetos/tree/main/mercadotica-master/imagens)      |
 |------------|-------------| -------------|
-|  <img src="https://github.com/gutto19/HTML_Projetos/tree/main/mercadotica-master/imagens/inicial.png" width="450"> |  <img src="https://github.com/gutto19/HTML_Projetos/tree/main/mercadotica-master/imagens/cadastro.png" width="250"> |    <img src="https://github.com/gutto19/HTML_Projetos/tree/main/mercadotica-master/imagens/login.png" widht="250"> |  
+|  <img src="https://github.com/gutto19/HTML_Projetos/tree/main/mercadotica-master/imagens/inicial.png" width="700"> |  <img src="https://github.com/gutto19/HTML_Projetos/tree/main/mercadotica-master/imagens/cadastro.png" width="250"> |    <img src="https://github.com/gutto19/HTML_Projetos/tree/main/mercadotica-master/imagens/login.png" widht="250"> |  
